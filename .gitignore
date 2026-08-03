@@ -1,0 +1,109 @@
+Config.h
+
+# ==========================================
+# Артефакты компиляции и объектные файлы
+# ==========================================
+*.o
+*.obj
+*.ilk
+*.map
+*.exp
+*.gch
+*.pch
+
+# ==========================================
+# Статические и динамические библиотеки
+# ==========================================
+*.a
+*.lib
+*.la
+*.lo
+*.so
+*.so.[0-9]*
+*.dylib
+*.dll
+
+# ==========================================
+# Исполняемые файлы (Вывод сборки)
+# ==========================================
+*.exe
+*.out
+*.app
+# Если вы собираете бинарники в папки bin/ или out/
+[Bb]in/
+[Oo]ut/
+
+# ==========================================
+# Системы сборки (Build Systems)
+# ==========================================
+
+# CMake
+CMakeLists.txt.user
+CMakeCache.txt
+CMakeFiles/
+CMakeScripts/
+Testing/
+Makefile
+cmake_install.cmake
+install_manifest.txt
+compile_commands.json
+# Стандартная папка для сборки CMake
+/[Bb]uild/
+
+# Ninja
+.ninja_deps
+.ninja_log
+
+# AutoTools / Make
+.deps/
+.libs/
+/autom4te.cache/
+/aclocal.m4
+/compile
+/config.guess
+/config.h.in
+/config.sub
+/configure
+/depcomp
+/install-sh
+/missing
+/stamp-h1
+
+# ==========================================
+# Менеджеры пакетов (C++ Package Managers)
+# ==========================================
+
+# Conan
+conan/
+conanbuildinfo.txt
+conaninfo.txt
+conanfile.txt.user
+
+# vcpkg
+vcpkg_installed/
+.vcpkg-root
+
+# ==========================================
+# Специфичный мусор компиляторов и IDE
+# ==========================================
+
+# Microsoft Visual Studio (MSVC)
+/.vs/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+*.opensdf
+*.sdf
+*.VC.db
+*.VC.opendb
+MSVC_Build*/
+
+# Xcode
+*.xccheckout
+*.xcworkspace
+!default.xcworkspace
+*.xcuserdata
+
+x64/
+*.tlog
